@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Welcome to Sedona!</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header>
@@ -15,76 +16,101 @@
 						<li><a href="#">Гостиницы</a></li>
 					</ul>
 				</nav>
-				<img src="http://placehold.it/100x100" alt="logo">
+				<div><img src="img/logo.png" width="138" height="70" alt="logo"></div>
+				<div class="header-background"></div>
 			</div>
 		</header>
-		<main> <!-- а нужен ли мне тег мэйн? -->
+		<main> 
 			<div class="container">
 				<div class="promo">
-					<h1>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
+					<h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
 					<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p> 
 				</div>
 				<div class="features">
 					<div class="feature ">
-						<p class="feature-header">Настоящий городок</p>
-						<p>— №1 —</p>
-						<p>Седона - не аттракцон для туристов, там течет своя жизнь</p>
-						<img src="http://placehold.it/512x256" alt="Picture of hotel">
+						<div class="feature-description">
+							<h2 class="feature-header">Настоящий городок</h2>
+							<div>— №1 —</div>
+							<p>Седона - не аттракцон для туристов, там течет своя жизнь</p>
+						</div>
+						<div class="feature-pic">
+							<img src="img/feature-pic1.jpg" weight="800" height="401" alt="Picture of hotel">
+						</div>
 					</div>
 					<div class="reasons">
 						<div>
-							<img src="http://placehold.it/79x77" alt="Icon House">
-							<p class="feature-header">Жилье</p>
-							<p>Рекомендуем пожить<br>в настоящем мотеле,<br>все как в кино!</p> 
+							<h2 class="feature-header reason1">Жилье</h2>
+							<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p> 
 						</div>
 						<div>
-							<img src="http://placehold.it/79x77" alt="Icon Burger">
-							<p class="feature-header">Еда</p>
-							<p>Всегда заказывайте<br>ФИРМЕННЫЙ БУРГЕР,<br>Вы НЕ разочаруетесь!</p> 
+							<h2 class="feature-header reason2">Еда</h2>
+							<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p> 
 						</div>	
 						<div>
-							<img src="http://placehold.it/79x77" alt="Icon Souvenir">
-							<p class="feature-header">Сувениры</p>
-							<p>Не только китайского,<br>но и местного<br>производства!</p> 
+							<h2 class="feature-header reason3">Сувениры</h2>
+							<p>Не только китайского, но и местного производства!</p> 
 						</div>		
 					</div>
 					<div class="feature">
-						<p class="feature-header">Там есть мост дьявола</p>
-						<p>— №2 —</p>
-						<p>Да, по нему можно<br>пройти! Если конечно<br>вы осмелитесь</p>
-						<img src="http://placehold.it/512x256" alt="Picture of mountain bridge">
+						<div class="feature-pic">
+							<img src="img/feature-pic2.jpg" weight="800" height="400" alt="Picture of mountain bridge">
+						</div>
+						<div class="feature-description">
+							<h2 class="feature-header">Там есть мост дьявола</h2>
+							<div>— №2 —</div>
+							<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						</div>						
 					</div>
 					<div class="feature">
-						<p class="feature-header">Небольшая площадь</p>
-						<p>— №3 — </p>
-						<p>ВСЕ достопримеча-<br>тельности находятся<br>очень близко</p>
+						<h2 class="feature-header">Небольшая площадь</h2>
+						<div>— №3 — </div>
+						<p>ВСЕ достопримечательности находятся очень близко</p>
 					</div>
 					<div class="feature">
-						<p class="feature-header">Красивая дорога</p>
-						<p>— №4 —</p>
-						<p>ЕХАТЬ В СЕДОНУ ИЗ<br>ЛАС-ВЕГАСА совсем<br>не скучно!</p>
+						<h2 class="feature-header">Красивая дорога</h2>
+						<div>— №4 —</div>
+						<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем не скучно!</p>
 					</div>
 					<div class="feature">
-						<p class="feature-header">Мало туристов</p>
-						<p>— №5 —</p>
-						<p>Большинство едет в<br>гранд каньон и<br>толпится там</p>
+						<h2 class="feature-header">Мало туристов</h2>
+						<div>— №5 —</div>
+						<p>Большинство едет в гранд каньон и толпится там</p>
 					</div>
 				</div>
 				<div class="offer">
-					<h2>Заинтересовались?</h2>
-					<p>Укажите предполагаемые даты поездки<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<div class="offer-text">
+						<p class="h2">Заинтересовались?</p>
+						<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					</div>
 					<div class="offer-form">
-						<p>Поиск гостиницы в Седоне</p>
-						<form>
-							<p>Дата заезда:</p>
-							<input type="text" name="movein">
-							<p>Дата выезда:</p>
-							<input type="text" name="moveout">
-							<p>взрослые</p> 
-							<p>дети</p>
-							<input type="submit" value="НАЙТИ">
+						<p class="h2">Поиск гостиницы в Седоне</p>
+						<form action="" method="post">
+							<div class="form-movein">
+								<label for="date-movein">Дата заезда:</label>
+								<input type="text" name="movein" id="date-movein">
+								<button type="button" class="icon-calendar">C</button>
+							</div>
+							<div class="form-moveout"> 
+								<label for="date-moveout">Дата выезда:</label>
+								<input type="text" name="moveout" id="date-moveout">
+								<button type="button" class="icon-calendar">C</button>
+							</div>
+							<div class="form-adult-kids">
+								<label for="adult">взрослые</label>
+								<span class="icon-minus">-</span>
+								<input type="text" value="2" id="adult">
+								<span class="icon-plus">+</span> <!-- добавила символы для наглядности -->
+								<label for="kids">дети</label>
+								<span class="icon-minus">-</span>
+								<input type="text" value="0" id="kids">
+								<span class="icon-plus">+</span>
+							</div>
+							<div class="form-btn">
+								<input class="h2" type="submit" value="НАЙТИ"> 
+							</div>
 						</form>
 					</div>
+					<div class="offer-map"></div> <!-- если карта как фон, значит, нужно форму поместить в див карты? -->
 				</div>
 			</div>
 		</main>
@@ -98,7 +124,7 @@
                 <a class="social-btn btn-instagramm" href="#"></a>
 			</div>
 			<div class="autor">
-				<a href="#"><img src="http://placehold.it/150x100" alt="made by HTML ACADEMY"></a>
+				<a href="#"><img src="img/author-logo.png" weight="195" height="39" alt="made by HTML ACADEMY"></a>
 			</div>
 		</footer>
 	</body>
