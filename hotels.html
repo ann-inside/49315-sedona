@@ -16,17 +16,16 @@
 						<li><a href="#">Гостиницы</a></li>
 					</ul>
 				</nav>
-                <div class="logo"><a><img src="img/logo.png" width="138" height="70" alt="logo"></a></div>
+                <div class="logo"><a href="#"><img src="img/logo.png" width="138" height="70" alt="logo"></a></div>
 			</div>
 		</header>
 		<main>
 			<div class="container">
 				<div class="filter">
 					<div class="filter-backgr-pic"></div>
-					<form action="" method="get" name="filter-search      "> 
-<!--                            здесь же по умолчанию будет метод "гет", т.к. это "поисковый запрос"?-->                           
-						<ul class="filter1">
-                            <p>Инфраструктура:</p>
+					<form action="" method="get" name="filter-search      ">                            
+						<ul class="filter-list">
+                            <h3>Инфраструктура:</h3>
 							<li>
                                 <input class="check-icon" type="checkbox" id="Pool" checked>
                                 <label for="Pool">Бассейн</label>
@@ -40,8 +39,8 @@
 								<label for="WiFi">Wi-Fi</label>
 							</li>
 						</ul>
-                        <ul class="filter2">
-							<p>Тип жилья:</p>
+                        <ul class="filter-list">
+							<h3>Тип жилья:</h3>
 							<li>
 								<input class="check-icon" type="checkbox" id="Hotel" checked>
 								<label for="Hotel">Гостиница</label>
@@ -56,12 +55,16 @@
 							</li>
 						</ul>
                         <div class="price-ranger">
-                        	<p>Стоимость в стуки(Р):</p>
-							<label for="price-from">ОТ</label>
-							<input type="text" name="price-from" id="price-from">
-							<label for="price-to">ДО</label>
-							<input type="text" name="price-to" id="price-to">
+                        	<h3>Стоимость в стуки(Р):</h3>
+							<div>
+								<label for="price-from">ОТ</label>
+								<input type="text" name="price-from" id="price-from">
+							</div>
+							<div>
+								<label for="price-to">ДО</label>
+								<input type="text" name="price-to" id="price-to">
 							<!-- а так можно по идее или потом тоглы нельзя стилизовать? -->
+							</div>
 							<div data-role="rangeslider" class="range" >
 								<label for="Price-min"></label>
 								<input type="range" id="Price-min" value="0" min="0" max="5000">
@@ -70,8 +73,8 @@
 							</div> 
 							<!-- <div>
 								<div class="range-value">
-									<div><span class="toggle"></span></div>
-                                	<div><span class="toggle"></span></div>
+									<div class="toggle"></div>
+                                	<div class="toggle"></div>
 								</div>
 							</div>	-->
 							<input class="btn-filter-submit" type="submit" value="Показать">				
@@ -79,9 +82,7 @@
                     </form>
 				</div>					
 				<div class="filter-value">
-					<div>
-						<span class="h2">Найдено:</span><div class="result"></div>
-					</div>
+					<div class="search-result">Найдено:<span>class="result">10</span></div>
 					<div class="sort-type">
 						<ul class="sort-hotels">
 				            <li><span class="sort-hotels-title">Сортировка:</span></li>
@@ -90,7 +91,7 @@
 				            <li><a class="sort-hotels-item" href="#">По рейтингу</a></li>
 				        </ul>
 			        </div>
-			        <div>
+			        <div class="ask-desk-icons">
 			        	<ul class="ask-desk">
 				            <li><a class="icon-down" href="#"></a></li>
 				            <li><a class="icon-up" href="#"></a></li>  
@@ -100,14 +101,14 @@
 				<div class="items">
 					<article class="item">
 						<div class="item-picture">
-								<img src="img/item-pic1.jpg" weight="135" height="90" alt="Фото гостиницы">
+							<img src="img/item-pic1.jpg" weight="135" height="90" alt="Фото гостиницы">
 						</div>
 						<div class="item-description">
-							<h2 class="h2"><a href="#">Amara Resort & Spa</a></h2>
+							<h2 class="item-header"><a href="#">Amara Resort & Spa</a></h2>
 							<p class="item-type">Гостиница</p>
 							<p class="item-min-price">ОТ 3500 Р.</p>
-							<button type="button" value="ПОДРОБНЕЕ">ПОДРОБНЕЕ</button>
-							<button type="button" value="ЗАБРОНИРОВАТЬ">ЗАБРОНИРОВАТЬ</button>
+							<a href="#" class="btn-item-blue">ПОДРОБНЕЕ</a>
+							<a href="#" class="btn-item-blue">ЗАБРОНИРОВАТЬ</a>
 						</div>
 						<div class="item-rating">
 							<span class="item-star-rating icon-star"></span>
@@ -122,11 +123,11 @@
 								<img src="img/item-pic2.jpg" weight="135" height="90" alt="Фото гостиницы">
 						</div>
 						<div class="item-description">
-							<h2 class="h2"><a href="#">Desert Quail Inn</a></h2>
+							<h2 class="item-header"><a href="#">Desert Quail Inn</a></h2>
 							<p class="item-type">Мотель</p>
 							<p class="item-min-price">ОТ 2000 Р.</p>
-							<button type="button" value="ПОДРОБНЕЕ">ПОДРОБНЕЕ</button>
-							<button type="button" value="ЗАБРОНИРОВАТЬ">ЗАБРОНИРОВАТЬ</button>
+							<a href="#" class="btn-item-blue">ПОДРОБНЕЕ</a>
+							<a href="#" class="btn-item-blue">ЗАБРОНИРОВАТЬ</a>
 						</div>
 						<div class="item-rating">
 							<span class="item-star-rating icon-star"></span>
@@ -139,11 +140,11 @@
 								<img src="img/item-pic3.jpg" weight="135" height="90" alt="Фото гостиницы">
 						</div>
 						<div class="item-description">
-							<h2 class="h2"><a href="#">Villas at Poco Diablo</a></h2>
+							<h2 class="item-header"><a href="#">Villas at Poco Diablo</a></h2>
 							<p class="item-type">Апартаменты</p>
 							<p class="item-min-price">ОТ 4000 Р.</p>
-							<button type="button" value="ПОДРОБНЕЕ">ПОДРОБНЕЕ</button>
-							<button type="button" value="ЗАБРОНИРОВАТЬ">ЗАБРОНИРОВАТЬ</button>
+							<a href="#" class="btn-item-blue">ПОДРОБНЕЕ</a>
+							<a href="#" class="btn-item-blue">ЗАБРОНИРОВАТЬ</a>
 						</div>
 						<div class="item-rating">
 							<span class="item-star-rating icon-star"></span>

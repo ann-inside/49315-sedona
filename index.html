@@ -79,11 +79,11 @@
 				</div>
 				<div class="offer">
 					<div class="offer-text">
-						<p class="h2">Заинтересовались?</p>
+						<p class="offer-header">Заинтересовались?</p>
 						<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					</div>
 					<div class="offer-form">
-						<p class="h2">Поиск гостиницы в Седоне</p>
+						<button type="button" value="Поиск гостиницы в Седоне" class="offer-form-header">Поиск гостиницы в Седоне</button>
 						<form action="" method="post">
 							<div class="form-movein">
 								<label for="date-movein">Дата заезда:</label>
@@ -96,14 +96,18 @@
 								<button type="button" class="icon-calendar">C</button>
 							</div>
 							<div class="form-adult-kids">
-								<label for="adult">взрослые</label>
-								<span class="icon-minus">-</span>
-								<input type="text" value="2" id="adult">
-								<span class="icon-plus">+</span> <!-- добавила символы для наглядности -->
-								<label for="kids">дети</label>
-								<span class="icon-minus">-</span>
-								<input type="text" value="0" id="kids">
-								<span class="icon-plus">+</span>
+								<div>
+									<label for="adult">взрослые</label>
+									<span class="icon-minus">-</span>
+									<input type="text" value="2" id="adult">
+									<span class="icon-plus">+</span> <!-- добавила символы для наглядности -->
+								</div>
+								<div>
+									<label for="kids">дети</label>
+									<span class="icon-minus">-</span>
+									<input type="text" value="0" id="kids">
+									<span class="icon-plus">+</span>	
+								</div>						
 							</div>
 							<div class="form-btn">
 								<input class="h2" type="submit" value="НАЙТИ"> 
