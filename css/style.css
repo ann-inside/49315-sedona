@@ -24,11 +24,7 @@ body * {
 }
 
 .container {
-<<<<<<< HEAD
     width: 1200px;
-=======
-    max-width: 1200px;
->>>>>>> origin/master
     padding: 15px 15px;
 }
 
@@ -40,7 +36,6 @@ body * {
 
 /*INDEX*/
 /*HEADER*/
-<<<<<<< HEAD
 nav {
     position: relative;
 }
@@ -48,15 +43,11 @@ nav {
 .header-logo {
     position: absolute;
     left: 459px;
-=======
-.header-logo {
->>>>>>> origin/master
     width: 138px;
     margin-left: auto;
     margin-right: auto;
 }
 
-<<<<<<< HEAD
 .navigation ul {
     margin: 0;
     padding: 0;
@@ -110,21 +101,6 @@ nav {
     background: url("../img/bg_promo_text.png") no-repeat 372px 76px;
 }
 
-=======
-header li {
-    display: inline-block;
-    margin-right: 200px;
-} 
-/*разбивать на два дива и флоатить?*/
-
-header li:last-child {
-    margin-right: 0
-} 
-
-.header-promo {
-    min-height: 508px;
-}
->>>>>>> origin/master
 /*HEADER*/
 
 
@@ -143,22 +119,14 @@ header li:last-child {
 
 .feature-description {
     float: left;
-<<<<<<< HEAD
     width: 400px;
-=======
-    width: 33%;
->>>>>>> origin/master
     outline: 4px dotted yellow;
 
 }
 
 .feature-pic {
     float: left;
-<<<<<<< HEAD
     width: 800px;
-=======
-    width: 66%;
->>>>>>> origin/master
     outline: 4px dotted green;
 
 }
@@ -169,21 +137,13 @@ header li:last-child {
 
 .reason {
     float: left;
-<<<<<<< HEAD
     width: 400px;
-=======
-    width: 33%;
->>>>>>> origin/master
 
 }
 
 .feature {
     float: left;
-<<<<<<< HEAD
     width: 400px;
-=======
-    width: 33%;
->>>>>>> origin/master
 }
 
 .offer {
