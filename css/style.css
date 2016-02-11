@@ -18,3 +18,249 @@ h2 {
 	line-height: 26px;
 	color: #000000;
 }
+
+body * {
+	outline: 1px solid red;
+}
+
+.container {
+    width: 1200px;
+    padding: 15px 15px;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*INDEX*/
+/*HEADER*/
+nav {
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    left: 459px;
+    width: 138px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation-item {
+    display: inline-block;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 20px 0;
+} 
+
+.navigation-item:first-child {
+    margin-left: 0
+}
+
+.navigation-item:last-child {
+    margin-right: 0
+}
+
+.navigation-link {
+    
+    text-decoration: none;
+    color: #000000;
+} 
+
+.navigation-left {
+    float: left;
+}
+
+.navigation-right {
+    float: right;
+}
+
+.header-promo {
+    position: relative;
+    min-height: 508px;
+    background: url("../img/bg_promo_img.jpg") no-repeat 0 -56px;
+}
+
+.header-promo-decor {
+    position: absolute;
+    top: 450px;
+    min-height: 508px;
+    background: url("../img/bg_promo_decor.png") no-repeat 0 0;
+}
+
+.header-promo-text {
+    min-height: 508px;
+    background: url("../img/bg_promo_text.png") no-repeat 372px 76px;
+}
+
+/*HEADER*/
+
+
+
+/*MAIN*/
+/*INDEX*/
+.promo {
+    padding: 50px 346px;
+    outline: 5px dotted purple;
+}
+
+.feature-block {
+    min-height: 200px;
+    outline: 2px dotted blue;
+}
+
+.feature-description {
+    float: left;
+    width: 400px;
+    outline: 4px dotted yellow;
+
+}
+
+.feature-pic {
+    float: left;
+    width: 800px;
+    outline: 4px dotted green;
+
+}
+.reasons {
+    min-height: 330px;
+/*    задала, чтобы визуально отделить блок*/
+}
+
+.reason {
+    float: left;
+    width: 400px;
+
+}
+
+.feature {
+    float: left;
+    width: 400px;
+}
+
+.offer {
+    min-height: 330px;
+}
+
+.offer-text {
+    padding: 50px 400px;
+}
+
+.offer-form {
+    margin: 0 400px;
+    padding: 20px;
+}
+/*INDEX*/
+
+/*HOTELS*/
+
+.hotels-container {
+    max-width: 1056px;
+    margin: 0 70px; 
+    outline: 3px dotted darkblue;
+} /*придумала эту обертку специально, чтобы центровать блоки на 2йстранице. 1я, на мой взгляд, так сильно не зажата в рамках*/
+
+.filter {
+    outline: 3px dotted darkcyan;
+}
+
+.filter-infrastructure {
+    float: left;
+    margin-right: 215px;
+}
+
+.filter-accommodation-type {
+    float: left;
+}
+
+.price-ranger {
+    float: right;
+}
+
+.filter-value {
+    padding: 29px 0;
+    border-bottom: 10px solid #e5e5e5; /*10px для наглядности*/
+}
+
+.search-result {
+    float: left;
+    margin-right: 40px;
+}
+
+.sort-type {
+    float: left;
+}
+
+.ask-desk-icons {
+    float: right;
+}
+
+.item {
+    padding: 30px 0;
+    border-bottom: 10px solid #e5e5e5;
+}
+
+.item-picture {
+    float: left;
+    margin-right: 30px;
+}
+
+.item-description {
+    float: left;
+    outline: 3px dotted darkred;
+}
+
+.item-rating {
+    float: right;
+    outline: 3px dotted darkred;
+}
+
+.item-star {
+    margin-top: 27px;
+}
+
+.item-total-rating {
+    margin-top: 45px;
+} 
+/*HOTELS*/
+/*MAIN*/
+
+
+/*FOOTER*/
+
+.offer-map {
+    min-height: 330px;
+    background: #94ba52;
+}
+
+.footer-container {
+    padding: 10px;
+}
+
+.hashtag {
+    float: left;
+    margin-right: 400px;
+    outline: 3px dotted brown;
+}
+
+.footer-social {
+    float: left;
+    outline: 3px dotted brown;
+}
+
+.author {
+    float: right;
+    outline: 3px dotted brown;
+}
+
+
+/*FOOTER*/
+/*INDEX*/

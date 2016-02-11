@@ -3,21 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>Welcome to Sedona!</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <div class="container">
             <header>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Информация</a></li>
-                            <li><a href="#">Фото и видео</a></li>
-                            <li><a href="#">Карта штата</a></li>
-                            <li><a href="#">Гостиницы</a></li>
-                        </ul>
+                    <nav class="navigation hotels-container">
+                    <!-- можно ли было стилизовать меню по тегу или это неправильно?  -->
+                        <ul class="clearfix">
+                            <div class="navigation-left">
+                                <li class="navigation-item"><a class="navigation-link" href="#">Информация</a></li>
+                                <li class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></li>
+                            </div>
+                            <div class="header-logo"><img src="img/logo.png" width="138" height="70" alt="logo"></div>
+                            <div class="navigation-right">
+                                <li class="navigation-item"><a class="navigation-link" href="#">Карта штата</a></li>
+                                <li class="navigation-item"><a class="navigation-link" href="#">Гостиницы</a></li>
+                            </div>                      
+                        </ul>   
                     </nav>
-                    <div><img src="img/logo.png" width="138" height="70" alt="logo"></div>
-                    <div class="header-promo"></div>
+                    <div class="header-promo">
+                        <div class="header-promo-text"></div>
+                        <div class="header-promo-decor"></div>
+                    </div>
             </header>
             <main> 
                 <div class="promo">
@@ -25,7 +34,7 @@
                     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p> 
                 </div>
                 <div class="features">
-                    <div class="feature ">
+                    <div class="feature-block clearfix">
                         <div class="feature-description">
                             <h2 class="feature-header">Настоящий городок</h2>
                             <div>— №1 —</div>
@@ -35,7 +44,7 @@
                             <img src="img/bg_block_city.jpg" width="800" height="401" alt="Picture of city">
                         </div>
                     </div>
-                    <div class="reasons">
+                    <div class="reasons clearfix">
                         <div class="reason">
                             <h2 class="feature-header reason1">Жилье</h2>
                             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p> 
@@ -49,7 +58,7 @@
                             <p>Не только китайского, но и местного производства!</p> 
                         </div>
                     </div>
-                    <div class="feature">
+                    <div class="feature-block clearfix">
                         <div class="feature-pic">
                             <img src="img/bg_block_bridge.jpg" width="800" height="400" alt="Picture of mountain bridge">
                         </div>
@@ -59,7 +68,7 @@
                             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         </div>
                     </div>
-                    <div class="reasons">
+                    <div class="reasons clearfix">
                         <div class="feature">
                             <h2 class="feature-header">Небольшая площадь</h2>
                             <div>— №3 — </div>
@@ -120,16 +129,18 @@
                 <div class="offer-map">
                     <div class="map"></div>
                 </div>
-                <div class="hashtag header-text-bold">
-                    <a href="#">#visitsedona</a>
-                </div>
-                <div class="footer-social">
-                    <a class="social-btn btn-vk" href="#"></a>
-                    <a class="social-btn btn-facebook" href="#"></a>
-                    <a class="social-btn btn-instagramm" href="#"></a>
-                </div>
-                <div class="author">
-                    <a href="#"><img src="img/author_logo.png" width="195" height="39" alt="made by HTML ACADEMY"></a>
+                <div class="footer-container clearfix">
+                    <div class="hashtag header-text-bold">
+                        <a href="#">#visitsedona</a>
+                    </div>
+                    <div class="footer-social">
+                        <a class="social-btn btn-vk" href="#">X</a>
+                        <a class="social-btn btn-facebook" href="#">X</a>
+                        <a class="social-btn btn-instagramm" href="#">X</a>
+                    </div>
+                    <div class="author">
+                        <a href="#"><img src="img/author_logo.png" width="195" height="39" alt="made by HTML ACADEMY"></a>
+                    </div>
                 </div>
             </footer>
         </div>
