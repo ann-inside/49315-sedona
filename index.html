@@ -9,24 +9,22 @@
     <body>
         <div class="container">
             <header>
-                    <nav class="navigation hotels-container">
-                    <!-- можно ли было стилизовать меню по тегу или это неправильно?  -->
-                        <ul class="clearfix">
-                            <div class="navigation-left">
-                                <li class="navigation-item"><a class="navigation-link" href="#">Информация</a></li>
-                                <li class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></li>
-                            </div>
-                            <div class="header-logo"><img src="img/logo.png" width="138" height="70" alt="logo"></div>
-                            <div class="navigation-right">
-                                <li class="navigation-item"><a class="navigation-link" href="#">Карта штата</a></li>
-                                <li class="navigation-item"><a class="navigation-link" href="#">Гостиницы</a></li>
-                            </div>                      
-                        </ul>   
-                    </nav>
-                    <div class="header-promo">
-                        <div class="header-promo-text"></div>
-                        <div class="header-promo-decor"></div>
-                    </div>
+                <nav class="navigation wrapper">
+                    <ul class="clearfix">
+                        <div class="navigation-left">
+                            <li class="navigation-item"><a class="navigation-link" href="#">Информация</a></li>
+                            <li class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></li>
+                        </div>
+                        <div class="header-logo"><img src="img/logo.png" width="138" height="70" alt="logo"></div>
+                        <div class="navigation-right">
+                            <li class="navigation-item"><a class="navigation-link" href="#">Карта штата</a></li>
+                            <li class="navigation-item"><a class="navigation-link" href="#">Гостиницы</a></li>
+                        </div>                      
+                    </ul>   
+                </nav>
+                <div class="header-promo">
+                    <img class="header-promo-text" src="img/bg_promo_text.png" width="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks">
+                </div> <!-- а это ок, что у меня картинка-текст вложен в див с картинкой-фоном?  -->
             </header>
             <main> 
                 <div class="promo">
@@ -129,7 +127,7 @@
                 <div class="offer-map">
                     <div class="map"></div>
                 </div>
-                <div class="footer-container clearfix">
+                <div class="footer-container wrapper clearfix">
                     <div class="hashtag header-text-bold">
                         <a href="#">#visitsedona</a>
                     </div>
