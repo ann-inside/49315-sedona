@@ -5,6 +5,7 @@
         <title>Welcome to Sedona!</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="container">
@@ -12,7 +13,7 @@
                 <nav class="navigation wrapper">
                     <ul class="clearfix">
                         <div class="navigation-left">
-                            <li class="navigation-item"><a class="navigation-link" href="#">Информация</a></li>
+                            <li class="navigation-item"><a class="navigation-link navigation-link-active" href="#">Информация</a></li>
                             <li class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></li>
                         </div>
                         <div class="header-logo"><img src="img/logo.png" width="138" height="70" alt="logo"></div>
@@ -24,7 +25,7 @@
                 </nav>
                 <div class="header-promo">
                     <img class="header-promo-text" src="img/bg_promo_text.png" width="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks">
-                </div> <!-- а это ок, что у меня картинка-текст вложен в див с картинкой-фоном?  -->
+                </div>
             </header>
             <main> 
                 <div class="promo">
@@ -39,7 +40,7 @@
                             <p>Седона - не аттракцон для туристов, там течет своя жизнь</p>
                         </div>
                         <div class="feature-pic">
-                            <img src="img/bg_block_city.jpg" width="800" height="401" alt="Picture of city">
+                            <img src="img/bg_block_city.jpg" width="800" height="256" alt="Picture of city">
                         </div>
                     </div>
                     <div class="reasons clearfix">
@@ -58,7 +59,7 @@
                     </div>
                     <div class="feature-block clearfix">
                         <div class="feature-pic">
-                            <img src="img/bg_block_bridge.jpg" width="800" height="400" alt="Picture of mountain bridge">
+                            <img src="img/bg_block_bridge.jpg" width="800" height="256" alt="Picture of mountain bridge">
                         </div>
                         <div class="feature-description">
                             <h2 class="feature-header">Там есть мост дьявола</h2>
@@ -90,7 +91,7 @@
                         <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                     </div>
                     <div class="offer-form">
-                        <a href="#" class="offer-form-btn-big header-text-bold">Поиск гостиницы в Седоне</a>
+                        <a href="#" class="offer-form-btn-big header-text-bold btn-brown">Поиск гостиницы в Седоне</a>
                         <form action="#" method="post">
                             <div class="form-movein">
                                 <label for="date-movein">Дата заезда:</label>
@@ -117,27 +118,30 @@
                                 </div>
                             </div>
                             <div class="offer-form-btn">
-                                <input class="header-text-bold" type="submit" value="НАЙТИ"> 
+                                <input class="header-text-bold btn-blue" type="submit" value="НАЙТИ"> 
                             </div>
                         </form>
                     </div>
                 </div>
             </main>
             <footer>
+                <!-- <div class="bg-map"></div>> -->
                 <div class="offer-map">
                     <div class="map"></div>
-                </div>
-                <div class="footer-container wrapper clearfix">
-                    <div class="hashtag header-text-bold">
-                        <a href="#">#visitsedona</a>
-                    </div>
-                    <div class="footer-social">
-                        <a class="social-btn btn-vk" href="#">X</a>
-                        <a class="social-btn btn-facebook" href="#">X</a>
-                        <a class="social-btn btn-instagramm" href="#">X</a>
-                    </div>
-                    <div class="author">
-                        <a href="#"><img src="img/author_logo.png" width="195" height="39" alt="made by HTML ACADEMY"></a>
+                    <div class="footer-container">
+                        <div class="wrapper clearfix">
+                            <div class="hashtag header-text-bold">
+                                <a href="#">#visitsedona</a>
+                            </div>
+                            <div class="footer-social">
+                                <a class="social-btn icon-twitter btn-blue" href="#"></a>
+                                <a class="social-btn icon-facebook btn-blue" href="#"></a>
+                                <a class="social-btn icon-youtube btn-blue" href="#"></a>
+                            </div>
+                            <div class="author">
+                                <a href="#"><img src="img/author_logo.png" width="195" height="39" alt="made by HTML ACADEMY"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>
