@@ -8,19 +8,20 @@
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
+        <div class="test-index"></div>
         <div class="container">
             <header>
                 <nav class="navigation wrapper">
                     <ul class="clearfix">
-                        <div class="navigation-left">
-                            <li class="navigation-item"><a class="navigation-link navigation-link-active" href="#">Информация</a></li>
-                            <li class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></li>
-                        </div>
-                        <div class="header-logo"><img src="img/logo.png" width="138" height="70" alt="logo"></div>
-                        <div class="navigation-right">
-                            <li class="navigation-item"><a class="navigation-link" href="#">Карта штата</a></li>
-                            <li class="navigation-item"><a class="navigation-link" href="#">Гостиницы</a></li>
-                        </div>                      
+                        <li class="navigation-left">
+                            <div class="navigation-item"><a class="navigation-link navigation-link-active" href="#">Информация</a></div>
+                            <div class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></div>
+                        </li>
+                        <li class="header-logo"><img src="img/logo.png" width="138" height="70" alt="logo"></li>
+                        <li class="navigation-right">
+                            <div class="navigation-item"><a class="navigation-link" href="#">Карта штата</a></div>
+                            <div class="navigation-item"><a class="navigation-link" href="hotels.html">Гостиницы</a></div>
+                        </li>                      
                     </ul>   
                 </nav>
                 <div class="header-promo">
@@ -96,25 +97,25 @@
                             <div class="form-movein">
                                 <label for="date-movein">Дата заезда:</label>
                                 <input type="text" name="movein" id="date-movein">
-                                <button type="button" class="icon-calendar">C</button>
+                                <button type="button" class="icon-calendar"></button>
                             </div>
                             <div class="form-moveout"> 
                                 <label for="date-moveout">Дата выезда:</label>
                                 <input type="text" name="moveout" id="date-moveout">
-                                <button type="button" class="icon-calendar">C</button>
+                                <button type="button" class="icon-calendar"></button>
                             </div>
                             <div class="form-adult-kids">
-                                <div>
+                                <div class="form-adult">
                                     <label for="adult">взрослые</label>
-                                    <button type="button" class="icon-minus">-</button>
+                                    <button type="button" class="icon-minus"></button>
                                     <input type="text" value="2" id="adult">
-                                    <button type="button" class="icon-plus">+</button> <!-- добавила символы для наглядности -->
+                                    <button type="button" class="icon-plus"></button> <!-- добавила символы для наглядности -->
                                 </div>
-                                <div>
+                                <div class="form-kids">
                                     <label for="kids">дети</label>
-                                    <button type="button" class="icon-minus">-</button>
+                                    <button type="button" class="icon-minus"></button>
                                     <input type="text" value="0" id="kids">
-                                    <button type="button" class="icon-plus">+</button>  
+                                    <button type="button" class="icon-plus"></button>  
                                 </div>
                             </div>
                             <div class="offer-form-btn">
@@ -139,7 +140,8 @@
                                 <a class="social-btn icon-youtube btn-blue" href="#"></a>
                             </div>
                             <div class="author">
-                                <a href="#"><img src="img/author_logo.png" width="195" height="39" alt="made by HTML ACADEMY"></a>
+                                <!-- <a href="#"><img src="img/author_logo.png" width="195" height="39" alt="made by HTML ACADEMY"></a> -->
+                                <a href="#">WEBSITE BY</a>
                             </div>
                         </div>
                     </div>
