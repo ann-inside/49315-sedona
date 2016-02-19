@@ -102,6 +102,7 @@ h2 {
     height: 2762px;
     z-index: 100;
     opacity: 0.5;
+    display: none;
 }
 
 .test-hotels {
@@ -113,6 +114,7 @@ h2 {
     height: 933px;
     z-index: 100;
     opacity: 0.5;
+    display: none;
 }
 /*=====  End of TEST  ======*/
 
@@ -146,11 +148,19 @@ nav {
     display: inline-block;
     vertical-align: top;
     margin-right: 148px;
-    padding: 18px 0;
+    padding: 14px 0;
 } 
 
 .navigation-item:last-child {
     margin-right: 0
+}
+
+.margin-item-left {
+    margin-right: 146px;
+}
+
+.margin-item-right {
+    margin-right: 160px;
 }
 
 .navigation-link {
@@ -189,7 +199,7 @@ nav {
 
 .navigation-right {
     float: right;
-    width: 345px;
+    width: 331px;
     font-size: 0;
 }
 
@@ -197,7 +207,6 @@ nav {
     position: relative;
     min-height: 508px;
     background: #e5f2fa url(../img/bg_promo_img.jpg) no-repeat 0 0; 
-    /*в url лучше прописывать с кавычками или без?*/
 }
 
 .header-promo-text {
@@ -211,6 +220,7 @@ nav {
     max-height: 100%;
     width: auto;
     height: auto;
+    margin-top: 76px;
 }
 
 .header-promo:after {
@@ -237,10 +247,14 @@ nav {
 ==============================*/
 
 .promo {
-    padding: 50px 0;
+    padding: 45px 0;
     margin: 0 auto;
     width: 500px;
     text-align: center;
+}
+
+.promo-text {
+    margin: 30px 0 9px;
 }
 
 .feature-block {
@@ -284,8 +298,8 @@ nav {
     width: 286px;
     text-align: center;
     padding: 0 57px; 
-    padding-top: 142px;
-    padding-bottom: 84px;
+    padding-top: 160px;
+    padding-bottom: 66px;
     font-size: 14px;
     vertical-align: top;
 }
@@ -329,6 +343,16 @@ nav {
 .feature-header {
     font-size: 21px;
     line-height: 21px;
+    padding: 0 69px;
+    margin-bottom: 25px;
+}
+
+.feature-text {
+    margin: 22px 0 0;
+}
+
+.feature-description p {
+    margin: 21px 0 0;
 }
 
 .offer {
@@ -337,16 +361,18 @@ nav {
 }
 
 .offer-text {
-    padding: 50px 0;
+    padding: 50px 0 28px;
     margin: 0 auto;
     width: 440px;
     text-align: center;
+    line-height: 26px;
 }
 
 .offer-header {
     font-size: 30px;
     line-height: 24px;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 /*----------  OFFER-FORM  ----------*/
@@ -785,6 +811,8 @@ nav {
 
 .sort-hotels-title {
     margin-right: 37px;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .sort-hotels-item {
