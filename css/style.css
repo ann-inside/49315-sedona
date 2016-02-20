@@ -23,10 +23,16 @@ h2 {
     margin: 0;
 }
 
-/*body * {
-    outline: 1px solid red;
+.h3 {
+    padding: 0;
+    margin: 0;
 }
-*/
+
+img {
+    max-width: 100%;
+    
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -37,7 +43,6 @@ h2 {
 .wrapper {
     width: 1056px;
     margin: 0 auto; 
-    /*outline: 3px dotted darkblue;*/
 }
 
 .clearfix:after {
@@ -114,7 +119,7 @@ h2 {
     height: 933px;
     z-index: 100;
     opacity: 0.5;
-/*    display: none;*/
+    display: none;
 }
 /*=====  End of TEST  ======*/
 
@@ -302,7 +307,7 @@ nav {
     vertical-align: top;
 }
 
-.reason1:before {
+.reason-house:before {
     display: block;
     position: absolute;
     top: 58px;
@@ -310,7 +315,7 @@ nav {
     content: url(../img/icon_house.png);
 }
 
-.reason2:before {
+.reason-food:before {
     display: block;
     position: absolute;
     top: 60px;
@@ -318,7 +323,7 @@ nav {
     content: url(../img/icon_food.png);
 }
 
-.reason3:before {
+.reason-gift:before {
     display: block;
     position: absolute;
     top: 54px;
@@ -392,19 +397,12 @@ nav {
 }
 
 .offer-form-popup {
-/*    display: none;*/
     position: absolute;
     width: 458px;
     margin: inherit;
     padding: 55px;
     background: #fff;
 }
-
-/*
-.offer-form-show {
-    display: block;
-}
-*/
 
 .form-movein input[type="text"],
 .form-moveout input[type="text"] {
@@ -415,6 +413,7 @@ nav {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
     
     outline: none;
     border: none;
@@ -446,6 +445,7 @@ nav {
     height: 14px;
     padding: 12px 34px;
     font-size: 14px;
+    font-family: "PT Sans", "Arial", sans-serif;
     line-height: 26px;
     font-weight: bold;
     text-align: center;
@@ -466,7 +466,9 @@ nav {
 }
 
 .form-movein input[type="text"]:active,
-.form-moveout input[type="text"]:active {
+.form-moveout input[type="text"]:active,
+.form-movein input[type="text"]:focus,
+.form-moveout input[type="text"]:focus {
     width: 318px;
     height: 10px;
     background: #fff;
@@ -474,15 +476,10 @@ nav {
     padding: 12px 10px;
 }
 
-/*.form-adult-kids input[type="text"]:active {
-    width: 42px;
-    height: 10px;
-    background: #fff;
-    border: 2px solid #e5e5e5;
-}
-*/
 .icon-calendar {
     position: absolute;
+    top: 6px;
+    left: 418px;
     outline: none;
     border: none;
     background: none;
@@ -492,11 +489,13 @@ nav {
 
     background: transparent;
     color: #a9a9a9;
-    /*right: 0;*/
+    font-size: 21px;
 }
 
 .icon-plus {
     position: absolute;
+    top: 10px;
+    left: 190px;
     outline: none;
     border: none;
     background: none;
@@ -506,11 +505,12 @@ nav {
 
     background: transparent;
     color: #a9a9a9;
-    /*right: 0;*/
 }
 
 .icon-minus {
     position: absolute;
+    top: 10px;
+    left: 115px;
     outline: none;
     border: none;
     background: none;
@@ -520,7 +520,14 @@ nav {
 
     background: transparent;
     color: #a9a9a9;
-    /*right: 0;*/
+}
+
+.form-kids .icon-minus {
+    left: 350px;
+}
+
+.form-kids .icon-plus {
+    left: 423px;
 }
 
 .form-movein button:hover,
@@ -540,7 +547,7 @@ nav {
 .form-adult-kids {
     position: relative;
     width: auto;
-    height: 38px;
+    min-height: 38px;
     margin-bottom: 29px; 
 }
 
@@ -616,7 +623,7 @@ nav {
 
 /*----------  FILTER  ----------*/
 .filter {
-    min-height: 218px;
+    min-height: 216px;
     background: #406c90 url(../img/bg_filter_mate.jpg) no-repeat;
 }
 
@@ -624,6 +631,10 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.filter-header {
+    margin: 26px 0;
 }
 
 .filter-infrastructure {
@@ -643,8 +654,7 @@ nav {
     line-height: 21px;
 }
 
-.filter-infrastructure ul li label,
-.filter-accommodation-type ul li label {
+.filter-label {
     padding: 5px 0;
 }
 
@@ -659,7 +669,7 @@ nav {
     line-height: 20px;
     border-radius: 2px;
     margin-right: 18px;
-    margin-bottom: 23px; 
+    margin-bottom: 25px; 
 }
 
 .check-icon:checked+label:before {
@@ -672,8 +682,8 @@ nav {
     font-size: 26px;
     line-height: 20px;
     border-radius: 2px;
-    margin-right: 14px;
-    margin-bottom: 23px;  
+    margin-right: 16px;
+    margin-bottom: 25px;  
 }
 
 .check-icon:disabled+label:before,
@@ -685,6 +695,10 @@ nav {
     float: right;
     width: 330px;
     color: #fff;
+}
+
+.price-ranger .filter-header {
+    margin-bottom: 11px;
 }
 
 .price-controls {
@@ -732,6 +746,7 @@ nav {
     color: inherit;
     font-size: 14px;
     line-height: 21px;
+    font-family: "PT Sans", "Arial", sans-serif;
     background: none;
     border: none;
     outline: none;
@@ -799,7 +814,7 @@ nav {
 }
 
 .filter-value {
-    padding: 29px 0;
+    padding: 30px 0;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -812,6 +827,7 @@ nav {
 .sort-type {
     float: left;
     width: 430px;
+    padding: 5px 0 0;
 }
 
 .sort-hotels-title {
@@ -840,7 +856,8 @@ nav {
 
 .ask-desk-icons {
     float: right;
-    width: 45px;
+    width: 65px;
+    font-size: 21px;
 }
 
 .ask-desk-icons a {
@@ -848,6 +865,7 @@ nav {
     color: #e5e5e5;
     text-align: center;
     vertical-align: middle;
+    /*font-size: 21px;*/
 }
 
 .ask-desk-icons a:hover {
@@ -871,6 +889,7 @@ nav {
 
 .item {
     padding: 30px 0;
+    padding-bottom: 24px; /*новое значение*/
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -896,11 +915,12 @@ nav {
 .item-description {
     float: left;
     width: 270px;
-    /*outline: 3px dotted darkred;*/
 }
 
 .item-description h2 {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    font-size: 21px;
+    line-height: 20px;
 }
 
 .item-info {
@@ -913,8 +933,8 @@ nav {
     display: inline-block;
     vertical-align: top;
     width: 110px;
-    margin-right: 9px;
-    margin-bottom: 10px;
+    margin-right: 6px;
+    margin-bottom: 14px;
     font-size: 14px;
 }
 
@@ -952,24 +972,27 @@ nav {
 .item-rating {
     float: right;
     width: 120px;
-    /*outline: 3px dotted darkred;*/
 }
 
 .item-star {
-    margin-top: 4px;
+    margin-top: -1px;
 }
 
 .item-star-rating {
     float: right;
+    width: ;
     font-size: 19px;
     line-height: 21px;
     color: #81b3d2;
+}
 
+.icon-star::before {
+    margin-right: 0;
 }
 
 .item-total-rating {
     float: right;
-    margin-top: 36px;
+    margin-top: 41px;
     width: 88px;
     height: 17px;
     padding: 5px 10px;
@@ -989,7 +1012,7 @@ nav {
 
 .offer-map {
     width: 1200px;
-    height: 119px;
+    min-height: 119px;
     padding-top: 474px;
     background: #94ba52 url(../img/offer_map.jpg) no-repeat;
 }
@@ -1038,7 +1061,6 @@ nav {
     float: right;
     width: 195px;
     margin-right: 29px;
-    /*outline: 3px dotted brown;*/
 }
 
 .author a {
