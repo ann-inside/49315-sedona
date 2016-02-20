@@ -21,7 +21,6 @@ h2 {
     line-height: 26px;
     color: #000000;
     margin: 0;
-<<<<<<< HEAD
 }
 
 .h3 {
@@ -32,14 +31,8 @@ h2 {
 img {
     max-width: 100%;
     
-=======
 }
 
-/*body * {
-    outline: 1px solid red;
->>>>>>> origin/master
-}
-*/
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -399,25 +392,16 @@ nav {
     min-height: 18px;
     background: #766357;
     text-align: center;
-<<<<<<< HEAD
     padding: 32px 89px 29px;
     color: #fff;
 }
 
 .offer-form-popup {
-=======
-    padding: 34px 89px;
-    color: #fff;
-}
-
-.offer-form form {
->>>>>>> origin/master
     position: absolute;
     width: 458px;
     margin: inherit;
     padding: 55px;
     background: #fff;
-<<<<<<< HEAD
 }
 
 .form-movein input[type="text"],
@@ -430,18 +414,6 @@ nav {
     line-height: 26px;
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
-=======
-}
-
-.form-movein input[type="text"],
-.form-moveout input[type="text"] {
-    /*position: relative;*/
-    width: 322px;
-    height: 14px;
-    padding: 12px;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
     
     outline: none;
     border: none;
@@ -452,42 +424,6 @@ nav {
     box-shadow: none;
 }
 
-.form-movein input[type="text"] {
-    margin-left: 19px; 
-}
-
-.form-moveout input[type="text"] {
-    margin-left: 16px;
-}
-
-.form-adult input[type="text"] {
-    margin-left: 40px;
-}
-
-.form-kids input[type="text"] {
-    margin-left: 25px;
-}
-
-.form-adult-kids input[type="text"] {
-    width: 46px;
-    height: 14px;
-    padding: 12px 34px;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
-    text-align: center;
->>>>>>> origin/master
-    
-    outline: none;
-    border: none;
-    background: none;
-    background: #f2f2f2;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-<<<<<<< HEAD
 .form-movein input[type="text"] {
     margin-left: 19px; 
 }
@@ -523,8 +459,6 @@ nav {
     box-shadow: none;
 }
 
-=======
->>>>>>> origin/master
 .form-movein input[type="text"]:hover,
 .form-moveout input[type="text"]:hover,
 .form-adult-kids input[type="text"]:hover {
@@ -532,13 +466,9 @@ nav {
 }
 
 .form-movein input[type="text"]:active,
-<<<<<<< HEAD
 .form-moveout input[type="text"]:active,
 .form-movein input[type="text"]:focus,
 .form-moveout input[type="text"]:focus {
-=======
-.form-moveout input[type="text"]:active {
->>>>>>> origin/master
     width: 318px;
     height: 10px;
     background: #fff;
@@ -546,22 +476,10 @@ nav {
     padding: 12px 10px;
 }
 
-<<<<<<< HEAD
 .icon-calendar {
     position: absolute;
     top: 6px;
     left: 418px;
-=======
-/*.form-adult-kids input[type="text"]:active {
-    width: 42px;
-    height: 10px;
-    background: #fff;
-    border: 2px solid #e5e5e5;
-}
-*/
-.icon-calendar {
-    position: absolute;
->>>>>>> origin/master
     outline: none;
     border: none;
     background: none;
@@ -571,20 +489,13 @@ nav {
 
     background: transparent;
     color: #a9a9a9;
-<<<<<<< HEAD
     font-size: 21px;
-=======
-    /*right: 0;*/
->>>>>>> origin/master
 }
 
 .icon-plus {
     position: absolute;
-<<<<<<< HEAD
     top: 10px;
     left: 190px;
-=======
->>>>>>> origin/master
     outline: none;
     border: none;
     background: none;
@@ -594,19 +505,12 @@ nav {
 
     background: transparent;
     color: #a9a9a9;
-<<<<<<< HEAD
-=======
-    /*right: 0;*/
->>>>>>> origin/master
 }
 
 .icon-minus {
     position: absolute;
-<<<<<<< HEAD
     top: 10px;
     left: 115px;
-=======
->>>>>>> origin/master
     outline: none;
     border: none;
     background: none;
@@ -616,7 +520,6 @@ nav {
 
     background: transparent;
     color: #a9a9a9;
-<<<<<<< HEAD
 }
 
 .form-kids .icon-minus {
@@ -625,9 +528,6 @@ nav {
 
 .form-kids .icon-plus {
     left: 423px;
-=======
-    /*right: 0;*/
->>>>>>> origin/master
 }
 
 .form-movein button:hover,
@@ -642,19 +542,11 @@ nav {
     color: #81b3d2;
 }
 
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> origin/master
 .form-movein,
 .form-moveout,
 .form-adult-kids {
     position: relative;
     width: auto;
-<<<<<<< HEAD
     min-height: 38px;
     margin-bottom: 29px; 
 }
@@ -663,12 +555,6 @@ nav {
     margin-bottom: 55px;
 }
 
-=======
-    height: 38px;
-    margin-bottom: 29px; 
-}
-
->>>>>>> origin/master
 .form-adult,
 .form-kids {
     display: inline-block;
@@ -768,12 +654,7 @@ nav {
     line-height: 21px;
 }
 
-<<<<<<< HEAD
 .filter-label {
-=======
-.filter-infrastructure ul li label,
-.filter-accommodation-type ul li label {
->>>>>>> origin/master
     padding: 5px 0;
 }
 
@@ -788,11 +669,7 @@ nav {
     line-height: 20px;
     border-radius: 2px;
     margin-right: 18px;
-<<<<<<< HEAD
     margin-bottom: 25px; 
-=======
-    margin-bottom: 23px; 
->>>>>>> origin/master
 }
 
 .check-icon:checked+label:before {
@@ -1046,10 +923,6 @@ nav {
     line-height: 20px;
 }
 
-.item-description h2 {
-    margin-bottom: 6px;
-}
-
 .item-info {
     width: 258px;
     margin: 0;
@@ -1060,13 +933,8 @@ nav {
     display: inline-block;
     vertical-align: top;
     width: 110px;
-<<<<<<< HEAD
     margin-right: 6px;
     margin-bottom: 14px;
-=======
-    margin-right: 9px;
-    margin-bottom: 10px;
->>>>>>> origin/master
     font-size: 14px;
 }
 
@@ -1107,19 +975,12 @@ nav {
 }
 
 .item-star {
-<<<<<<< HEAD
     margin-top: -1px;
-=======
-    margin-top: 4px;
->>>>>>> origin/master
 }
 
 .item-star-rating {
     float: right;
-<<<<<<< HEAD
     width: ;
-=======
->>>>>>> origin/master
     font-size: 19px;
     line-height: 21px;
     color: #81b3d2;
@@ -1131,11 +992,7 @@ nav {
 
 .item-total-rating {
     float: right;
-<<<<<<< HEAD
     margin-top: 41px;
-=======
-    margin-top: 36px;
->>>>>>> origin/master
     width: 88px;
     height: 17px;
     padding: 5px 10px;
@@ -1169,14 +1026,9 @@ nav {
 .hashtag {
     float: left;
     width: 145px;
-<<<<<<< HEAD
     margin-right: 249px;
     margin-left: 59px;
     margin-top: 10px;
-=======
-    margin-right: 250px;
-    margin-left: 54px;
->>>>>>> origin/master
 }
 
 .hashtag a {
@@ -1215,16 +1067,11 @@ nav {
     display: block;
     width: 195px;
     height: 39px;
-<<<<<<< HEAD
     padding-top: 14px;
-=======
-    padding-top: 8px;
->>>>>>> origin/master
     vertical-align: middle;
     text-align: left;
     text-decoration: none;
     color: #000;
-<<<<<<< HEAD
     background: url(../img/author_logo_only.png) no-repeat 80px 4px;
 }
 
@@ -1234,16 +1081,5 @@ nav {
 
 .author a:active {
     background: url(../img/author_logo_down.png) no-repeat 80px 4px;
-=======
-    background: url(../img/author_logo_only.png) no-repeat 80px 0;
-}
-
-.author a:hover {
-    background: url(../img/author_logo_hvr.png) no-repeat 80px 0;
-}
-
-.author a:active {
-    background: url(../img/author_logo_down.png) no-repeat 80px 0;
->>>>>>> origin/master
 }
 /*=====  End of FOOTER  ======*/
