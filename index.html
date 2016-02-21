@@ -8,7 +8,6 @@
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div class="test-index"></div>
         <div class="container">
             <header>
                 <nav class="navigation wrapper">
@@ -21,17 +20,17 @@
                         <li class="navigation-right">
                             <div class="navigation-item margin-item-right"><a class="navigation-link" href="#">Карта штата</a></div>
                             <div class="navigation-item"><a class="navigation-link" href="hotels.html">Гостиницы</a></div>
-                        </li>                      
-                    </ul>   
+                        </li>
+                    </ul>
                 </nav>
                 <div class="header-promo">
                     <img class="header-promo-text" src="img/bg_promo_text.png" width="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks">
                 </div>
             </header>
-            <main> 
+            <main>
                 <div class="promo">
                     <h1 class="header-text-bold">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-                    <p class="promo-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p> 
+                    <p class="promo-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                 </div>
                 <div class="features">
                     <div class="feature-block clearfix">
@@ -47,25 +46,26 @@
                     <div class="reasons clearfix">
                         <div class="reason">
                             <h2 class="feature-header reason-house">Жилье</h2>
-                            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p> 
+                            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                         </div>
                         <div class="reason">
                             <h2 class="feature-header reason-food">Еда</h2>
-                            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p> 
-                        </div>  
+                            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                        </div>
                         <div class="reason">
                             <h2 class="feature-header reason-gift">Сувениры</h2>
-                            <p>Не только китайского,<br>но и местного производства!</p> 
+                            <p class="reason-gift-top">Не только китайского,</p>
+                            <p class="reason-gift-bottom">но и местного производства!</p>
                         </div>
                     </div>
                     <div class="feature-block clearfix">
                         <div class="feature-pic">
                             <img src="img/bg_block_bridge.jpg" width="800" height="256" alt="Picture of mountain bridge">
                         </div>
-                        <div class="feature-description">
+                        <div class="feature-description feature-description-bridge">
                             <h2 class="feature-header">Там есть мост дьявола</h2>
                             <div>— №2 —</div>
-                            <p>Да, по нему можно пройти!<br>Если конечно вы осмелитесь</p>
+                            <p class="feature-text-bridge">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         </div>
                     </div>
                     <div class="reasons clearfix">
@@ -89,17 +89,18 @@
                 <div class="offer">
                     <div class="offer-text">
                         <p class="offer-header">Заинтересовались?</p>
-                        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                        <p class="offer-text-top">Укажите предполагаемые даты поездки,</p>
+                        <p class="offer-text-bottom">и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                     </div>
                     <div class="offer-form">
-                        <a href="#" class="offer-form-btn-big header-text-bold btn-brown">Поиск гостиницы в Седоне</a>
-                        <form class="offer-form-popup" action="#" method="post">
+                        <a href="offer-form.html" class="offer-form-btn-big header-text-bold btn-brown">Поиск гостиницы в Седоне</a>
+                        <form class="offer-form-popup" action="echo" method="post">
                             <div class="form-movein">
                                 <label for="date-movein">Дата заезда:</label>
                                 <input type="text" name="movein" id="date-movein">
                                 <button type="button" class="icon-calendar"></button>
                             </div>
-                            <div class="form-moveout"> 
+                            <div class="form-moveout">
                                 <label for="date-moveout">Дата выезда:</label>
                                 <input type="text" name="moveout" id="date-moveout">
                                 <button type="button" class="icon-calendar"></button>
@@ -109,17 +110,17 @@
                                     <label for="adult">взрослые</label>
                                     <button type="button" class="icon-minus"></button>
                                     <input type="text" value="2" id="adult">
-                                    <button type="button" class="icon-plus"></button> 
+                                    <button type="button" class="icon-plus"></button>
                                 </div>
                                 <div class="form-kids">
                                     <label for="kids">дети</label>
                                     <button type="button" class="icon-minus"></button>
                                     <input type="text" value="0" id="kids">
-                                    <button type="button" class="icon-plus"></button>  
+                                    <button type="button" class="icon-plus"></button>
                                 </div>
                             </div>
                             <div class="offer-form-btn">
-                                <input class="header-text-bold btn-blue" type="submit" value="НАЙТИ"> 
+                                <input class="header-text-bold btn-blue" type="submit" value="НАЙТИ">
                             </div>
                         </form>
                     </div>
@@ -146,4 +147,4 @@
             </footer>
         </div>
     </body>
-</html> 
+</html>

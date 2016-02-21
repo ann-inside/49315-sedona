@@ -8,7 +8,6 @@
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div class="test-hotels"></div>
         <div class="container">
             <header>
                 <nav class="navigation wrapper">
@@ -21,8 +20,8 @@
                             <li class="navigation-right">
                                 <div class="navigation-item margin-item-right"><a class="navigation-link" href="#">Карта штата</a></div>
                                 <div class="navigation-item"><a class="navigation-link navigation-link-active" href="#">Гостиницы</a></div>
-                            </li>                      
-                        </ul>   
+                            </li>
+                        </ul>
                     </nav>
             </header>
             <main>
@@ -33,16 +32,16 @@
                                 <h3 class="filter-header">Инфраструктура:</h3>
                                 <ul class="filter-list">
                                     <li>
-                                        <input class="check-icon" type="checkbox" id="Pool" checked hidden>
-                                        <label class="filter-label" for="Pool">Бассейн</label>
+                                        <input class="check-icon" type="checkbox" id="pool" checked hidden>
+                                        <label class="filter-label" for="pool">Бассейн</label>
                                     </li>
                                     <li>
-                                        <input class="check-icon" type="checkbox" id="Parking" disabled hidden>
-                                        <label class="filter-label" for="Parking">Парковка</label>
+                                        <input class="check-icon" type="checkbox" id="parking" disabled hidden>
+                                        <label class="filter-label" for="parking">Парковка</label>
                                     </li>
                                     <li>
-                                        <input class="check-icon" type="checkbox" id="WiFi" hidden>
-                                        <label class="filter-label" for="WiFi">Wi-Fi</label>
+                                        <input class="check-icon" type="checkbox" id="wifi" hidden>
+                                        <label class="filter-label" for="wifi">Wi-Fi</label>
                                     </li>
                                 </ul>
                             </div>
@@ -64,12 +63,14 @@
                                 </ul>
                             </div>
                             <div class="price-ranger">
-                                <h3 class="filter-header">Стоимость в сутки(Р):</h3>
-                                <div class="price-controls">
-                                        <label class="price-from" for="price-from">ОТ</label>
-                                        <input type="text" name="price-from" id="price-from">
-                                        <label class="price-to" for="price-to">ДО</label>
-                                        <input type="text" name="price-to" id="price-to">
+                                <div class="price-value">
+                                    <h3 class="filter-header">Стоимость в сутки(Р):</h3>
+                                    <div class="price-controls">
+                                            <label class="price-from" for="price-from">ОТ</label>
+                                            <input type="text" name="price-from" id="price-from">
+                                            <label class="price-to" for="price-to">ДО</label>
+                                            <input type="text" name="price-to" id="price-to">
+                                    </div>
                                 </div>
                                 <div class="range-value">
                                     <div class="scale">
@@ -83,17 +84,19 @@
                         </form>
                     </div>
                 </div>
-                <div class="filter-value wrapper clearfix">
-                    <div class="search-result header-text-bold">Найдено: <span class="result header-text-bold">3</span></div>
-                    <div class="sort-type">
-                        <span class="sort-hotels-title">Сортировка:</span>
-                        <a class="sort-hotels-item sort-item-active" href="#">По цене</a>
-                        <a class="sort-hotels-item" href="#">По типу</a>
-                        <a class="sort-hotels-item" href="#">По рейтингу</a>
-                    </div>
-                    <div class="ask-desk-icons">
-                        <a class="icon-up-dir" href="#"></a>
-                        <a class="icon-down-dir sort-item-active" href="#"></a>
+                <div class="filter-value">
+                    <div class="wrapper clearfix">
+                        <div class="search-result header-text-bold">Найдено: <span class="result header-text-bold">3</span></div>
+                        <div class="sort-type">
+                            <span class="sort-hotels-title">Сортировка:</span>
+                            <a class="sort-hotels-item sort-item-active" href="#">По цене</a>
+                            <a class="sort-hotels-item" href="#">По типу</a>
+                            <a class="sort-hotels-item" href="#">По рейтингу</a>
+                        </div>
+                        <div class="ask-desk-icons">
+                            <a class="icon-up-dir" href="#"></a>
+                            <a class="icon-down-dir sort-item-active" href="#"></a>
+                        </div>
                     </div>
                 </div>
                 <div class="items">
