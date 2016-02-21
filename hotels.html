@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Гостиницы - Welcome to Sedona!</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.min.css">
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -27,7 +27,7 @@
             <main>
                 <div class="filter">
                     <div class="wrapper clearfix">
-                        <form action="#" method="get" name="filter-search">
+                        <form class="clearfix" action="https://echo.sedona.ru" method="get" name="filter-search">
                             <div class="filter-infrastructure">
                                 <h3 class="filter-header">Инфраструктура:</h3>
                                 <ul class="filter-list">
@@ -49,16 +49,16 @@
                                 <h3 class="filter-header">Тип жилья:</h3>
                                 <ul class="filter-list">
                                     <li>
-                                        <input class="check-icon" type="checkbox" id="Hotel" checked hidden>
-                                        <label class="filter-label" for="Hotel">Гостиница</label>
+                                        <input class="check-icon" type="checkbox" id="hotel" checked hidden>
+                                        <label class="filter-label" for="hotel">Гостиница</label>
                                     </li>
                                     <li>
-                                        <input class="check-icon" type="checkbox" id="Motel" checked disabled hidden>
-                                        <label class="filter-label" for="Motel">Мотель</label>
+                                        <input class="check-icon" type="checkbox" id="motel" checked disabled hidden>
+                                        <label class="filter-label" for="motel">Мотель</label>
                                     </li>
                                     <li>
-                                        <input class="check-icon" type="checkbox" id="Apartments" checked hidden>
-                                        <label class="filter-label" for="Apartments">Апартаменты</label>
+                                        <input class="check-icon" type="checkbox" id="apartments" checked hidden>
+                                        <label class="filter-label" for="apartments">Апартаменты</label>
                                     </li>
                                 </ul>
                             </div>
