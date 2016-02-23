@@ -364,6 +364,7 @@ nav {
 .offer {
   min-height: 100px;
   background: #ffffff;
+  z-index: 1500;
 }
 
 .offer-text {
@@ -417,6 +418,14 @@ nav {
 
 .offer-form-popup-show {
     display: block;
+    z-index: 1000;
+    animation: form-open 0.5s;
+}
+
+@keyframes form-open {
+    0% { transform: translateY(-395px); }
+    /*50% { transform: translateY(30px); }*/
+    100% { transform: translateY(0px); }
 }
 
 .offer-form-popup label {
