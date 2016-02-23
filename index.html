@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Welcome to Sedona!</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.min.css">
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -112,15 +112,19 @@
                             <div class="form-adult-kids">
                                 <div class="form-adult">
                                     <label for="adult">взрослые:</label>
-                                    <button type="button" class="icon-minus"></button>
-                                    <input type="text" value="2" id="adult">
-                                    <button type="button" class="icon-plus"></button>
+                                    <div class="form-adult-input">
+                                        <button type="button" class="icon-minus"></button>
+                                        <input type="text" value="2" id="adult">
+                                        <button type="button" class="icon-plus"></button>
+                                    </div>
                                 </div>
                                 <div class="form-kids">
                                     <label for="kids">дети:</label>
-                                    <button type="button" class="icon-minus"></button>
-                                    <input type="text" value="0" id="kids">
-                                    <button type="button" class="icon-plus"></button>
+                                    <div class="form-kids-input">
+                                        <button type="button" class="icon-minus"></button>
+                                        <input type="text" value="0" id="kids">
+                                        <button type="button" class="icon-plus"></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="offer-form-btn">
@@ -150,7 +154,7 @@
                 </div>
             </footer>
         </div>
-        <script src="js/offer-form-popup.js"></script>
+        <script src="js/offer-form-popup.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=YBvOj0jR_fzQ-mVKfm0ZdWY4Skc4Q2Yt&width=1200&height=594&lang=ru_RU&sourceType=constructor&id=yandex-map"></script>
     </body>
 </html>

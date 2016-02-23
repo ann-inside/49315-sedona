@@ -139,8 +139,8 @@ nav {
   display: inline-block;
   margin-right: 148px;
   padding: 14px 0;
-  vertical-align: top;
   color: #000000;
+  vertical-align: top;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
@@ -148,7 +148,7 @@ nav {
 }
 
 .navigation-link:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .margin-item-left {
@@ -362,9 +362,9 @@ nav {
 }
 
 .offer {
+  z-index: 1500;
   min-height: 100px;
   background: #ffffff;
-  z-index: 1500;
 }
 
 .offer-text {
@@ -409,23 +409,26 @@ nav {
 
 .offer-form-popup {
   position: absolute;
+  display: none;
   width: 458px;
   margin: inherit;
   padding: 55px;
   background: #ffffff;
-  display: none;
 }
 
 .offer-form-popup-show {
-    display: block;
-    z-index: 1000;
-    animation: form-open 0.5s;
+  z-index: 1000;
+  display: block;
+  animation: form-open 0.5s;
 }
 
 @keyframes form-open {
-    0% { transform: translateY(-395px); }
-    /*50% { transform: translateY(30px); }*/
-    100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(-395px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .offer-form-popup label {
@@ -433,24 +436,24 @@ nav {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: bold;
-  line-height: 21px; 
   font-weight: bold;
+  line-height: 21px;
 }
 
 .form-date-input-top {
-    position: relative;
-    width: 322px;
-    display: inline-block;
-    vertical-align: bottom;
-    margin-left: 24px;
+  position: relative;
+  display: inline-block;
+  width: 322px;
+  margin-left: 24px;
+  vertical-align: bottom;
 }
 
 .form-date-input-bottom {
-    position: relative;
-    width: 322px;
-    display: inline-block;
-    vertical-align: bottom;
-    margin-left: 20px;
+  position: relative;
+  display: inline-block;
+  width: 322px;
+  margin-left: 20px;
+  vertical-align: bottom;
 }
 
 .form-movein input[type="text"],
@@ -465,19 +468,27 @@ nav {
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
           box-shadow: none;
+  text-transform: uppercase;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
-  text-transform: uppercase;
 }
 
-.form-adult input[type="text"] {
-  margin-left: 39px;
+.form-adult-input {
+  position: relative;
+  display: inline-block;
+  width: 114px;
+  margin-left: 43px;
+  vertical-align: bottom;
 }
 
-.form-kids input[type="text"] {
-  margin-left: 22px;
+.form-kids-input {
+  position: relative;
+  display: inline-block;
+  width: 114px;
+  margin-left: 26px;
+  vertical-align: bottom;
 }
 
 .form-adult-kids input[type="text"] {
@@ -530,24 +541,10 @@ nav {
   font-size: 21px;
 }
 
-.icon-plus {
-  position: absolute;
-  top: 10px;
-  left: 190px;
-  outline: none;
-  border: none;
-  background: none;
-  background: transparent;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
-  color: #a9a9a9;
-}
-
 .icon-minus {
   position: absolute;
   top: 10px;
-  left: 115px;
+  left: 2px;
   outline: none;
   border: none;
   background: none;
@@ -556,14 +553,31 @@ nav {
      -moz-box-shadow: none;
           box-shadow: none;
   color: #a9a9a9;
+  font-size: 14px;
 }
 
 .form-kids .icon-minus {
-  left: 348px;
+  left: 6px;
 }
 
+.icon-plus {
+  position: absolute;
+  top: 10px;
+  left: 77px;
+  outline: none;
+  border: none;
+  background: none;
+  background: transparent;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  color: #a9a9a9;
+  font-size: 14px;
+}
+
+
 .form-kids .icon-plus {
-  left: 423px;
+  left: 81px;
 }
 
 .form-movein button:hover,
@@ -579,17 +593,13 @@ nav {
 }
 
 .form-movein,
-.form-moveout {
-  font-size: 0;
-}
-
-.form-movein,
 .form-moveout,
 .form-adult-kids {
   position: relative;
   width: auto;
   min-height: 38px;
   margin-bottom: 29px;
+  font-size: 0;
 }
 
 .form-adult-kids {
@@ -603,7 +613,7 @@ nav {
 }
 
 .form-adult {
-  margin-right: 47px;
+  margin-right: 51px;
 }
 
 .offer-form-btn input[type="submit"] {
@@ -764,6 +774,7 @@ nav {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
 
 .price-controls label {
   display: inline-block;
@@ -998,8 +1009,8 @@ nav {
 }
 
 .item-btn {
-  font-size: 14px;
   width: 760px;
+  font-size: 14px;
 }
 
 .item-btn-blue {
@@ -1063,18 +1074,18 @@ nav {
 }
 
 .footer-hotels {
-    position: relative;
-    min-height: 123px;
+  position: relative;
+  min-height: 123px;
 }
 
 .footer-container {
   position: absolute;
-  width: 1200px;
   bottom: 0;
+  z-index: 10;
+  width: 1200px;
   padding: 35px 0;
   background: #fefefe;
   opacity: 0.9;
-  z-index: 10;
 }
 
 .hashtag {
