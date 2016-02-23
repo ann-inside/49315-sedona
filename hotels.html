@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Гостиницы - Welcome to Sedona!</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -13,13 +13,13 @@
                 <nav class="navigation wrapper">
                         <ul class="clearfix">
                             <li class="navigation-left">
-                                <div class="navigation-item margin-item-left"><a class="navigation-link" href="index.html">Информация</a></div>
-                                <div class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></div>
+                                <a class="navigation-link margin-item-left" href="index.html">Информация</a>
+                                <a class="navigation-link" href="#">Фото и видео</a>
                             </li>
                             <li class="header-logo"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="logo"></a></li>
                             <li class="navigation-right">
-                                <div class="navigation-item margin-item-right"><a class="navigation-link" href="#">Карта штата</a></div>
-                                <div class="navigation-item"><a class="navigation-link navigation-link-active" href="#">Гостиницы</a></div>
+                                <a class="navigation-link margin-item-right" href="#">Карта штата</a>
+                                <a class="navigation-link navigation-link-active" href="#">Гостиницы</a>
                             </li>
                         </ul>
                     </nav>
@@ -111,7 +111,7 @@
                                     <span class="item-type">Гостиница</span>
                                     <span class="item-min-price">ОТ 3500 Р.</span>
                                 </div>
-                                <div class="item-btn">
+                                <div class="item-btn clearfix">
                                     <a href="#" class="item-btn-blue btn-blue">ПОДРОБНЕЕ</a>
                                     <a href="#" class="item-btn-brown btn-brown">ЗАБРОНИРОВАТЬ</a>
                                 </div>
@@ -138,7 +138,7 @@
                                     <span class="item-type">Мотель</span>
                                     <span class="item-min-price">ОТ 2000 Р.</span>
                                 </div>
-                                <div class="item-btn">
+                                <div class="item-btn clearfix">
                                     <a href="#" class="item-btn-blue btn-blue">ПОДРОБНЕЕ</a>
                                     <a href="#" class="item-btn-brown btn-brown">ЗАБРОНИРОВАТЬ</a>
                                 </div>
@@ -163,7 +163,7 @@
                                     <span class="item-type">Апартаменты</span>
                                     <span class="item-min-price">ОТ 4000 Р.</span>
                                 </div>
-                                <div class="item-btn">
+                                <div class="item-btn clearfix">
                                     <a href="#" class="item-btn-blue btn-blue">ПОДРОБНЕЕ</a>
                                     <a href="#" class="item-btn-brown btn-brown">ЗАБРОНИРОВАТЬ</a>
                                 </div>
@@ -181,17 +181,21 @@
                 </div>
             </main>
             <footer>
-                <div class="footer-container wrapper clearfix">
-                    <div class="hashtag header-text-bold">
-                        <a href="#">#visitsedona</a>
-                    </div>
-                    <div class="footer-social">
-                        <a class="social-btn icon-twitter btn-blue" href="#"></a>
-                        <a class="social-btn icon-facebook btn-blue" href="#"></a>
-                        <a class="social-btn icon-youtube btn-blue" href="#"></a>
-                    </div>
-                    <div class="author">
-                        <a href="#">WEBSITE BY</a>
+                <div class="footer-hotels">
+                    <div class="footer-container">
+                        <div class="wrapper clearfix">
+                            <div class="hashtag header-text-bold">
+                                <a href="#">#visitsedona</a>
+                            </div>
+                            <div class="footer-social">
+                                <a class="social-btn icon-twitter btn-blue" href="#"></a>
+                                <a class="social-btn icon-facebook btn-blue" href="#"></a>
+                                <a class="social-btn icon-youtube btn-blue" href="#"></a>
+                            </div>
+                            <div class="author">
+                                <a href="#">WEBSITE BY</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>

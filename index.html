@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Welcome to Sedona!</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -13,13 +13,13 @@
                 <nav class="navigation wrapper">
                     <ul class="clearfix">
                         <li class="navigation-left">
-                            <div class="navigation-item margin-item-left"><a class="navigation-link navigation-link-active" href="#">Информация</a></div>
-                            <div class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></div>
+                            <a class="navigation-link margin-item-left navigation-link-active" href="#">Информация</a>
+                            <a class="navigation-link" href="#">Фото и видео</a>
                         </li>
                         <li class="header-logo"><img src="img/logo.png" width="138" height="70" alt="logo"></li>
                         <li class="navigation-right">
-                            <div class="navigation-item margin-item-right"><a class="navigation-link" href="#">Карта штата</a></div>
-                            <div class="navigation-item"><a class="navigation-link" href="hotels.html">Гостиницы</a></div>
+                            <a class="navigation-link margin-item-right" href="#">Карта штата</a>
+                            <a class="navigation-link" href="hotels.html">Гостиницы</a>
                         </li>
                     </ul>
                 </nav>
@@ -97,23 +97,27 @@
                         <form class="offer-form-popup" action="https://echo.sedona.ru" method="post">
                             <div class="form-movein">
                                 <label for="date-movein">Дата заезда:</label>
-                                <input type="text" name="movein" id="date-movein">
-                                <button type="button" class="icon-calendar"></button>
+                                <div class="form-date-input-top">
+                                    <input type="text" name="movein" id="date-movein">
+                                    <button type="button" class="icon-calendar"></button>
+                                </div>                                
                             </div>
                             <div class="form-moveout">
                                 <label for="date-moveout">Дата выезда:</label>
-                                <input type="text" name="moveout" id="date-moveout">
-                                <button type="button" class="icon-calendar"></button>
+                                <div class="form-date-input-bottom">
+                                    <input type="text" name="moveout" id="date-moveout">
+                                    <button type="button" class="icon-calendar"></button>
+                                </div>
                             </div>
                             <div class="form-adult-kids">
                                 <div class="form-adult">
-                                    <label for="adult">взрослые</label>
+                                    <label for="adult">взрослые:</label>
                                     <button type="button" class="icon-minus"></button>
                                     <input type="text" value="2" id="adult">
                                     <button type="button" class="icon-plus"></button>
                                 </div>
                                 <div class="form-kids">
-                                    <label for="kids">дети</label>
+                                    <label for="kids">дети:</label>
                                     <button type="button" class="icon-minus"></button>
                                     <input type="text" value="0" id="kids">
                                     <button type="button" class="icon-plus"></button>
@@ -127,7 +131,7 @@
                 </div>
             </main>
             <footer>
-                <div class="offer-map">
+                <div class="offer-map" id="yandex-map">
                     <div class="footer-container">
                         <div class="wrapper clearfix">
                             <div class="hashtag header-text-bold">
@@ -146,5 +150,7 @@
                 </div>
             </footer>
         </div>
+        <script src="js/offer-form-popup.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=YBvOj0jR_fzQ-mVKfm0ZdWY4Skc4Q2Yt&width=1200&height=594&lang=ru_RU&sourceType=constructor&id=yandex-map"></script>
     </body>
 </html>

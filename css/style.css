@@ -135,15 +135,20 @@ nav {
   list-style: none;
 }
 
-.navigation-item {
+.navigation-link {
   display: inline-block;
   margin-right: 148px;
   padding: 14px 0;
   vertical-align: top;
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
 }
 
-.navigation-item:last-child {
-  margin-right: 0;
+.navigation-link:last-child {
+    margin-right: 0;
 }
 
 .margin-item-left {
@@ -152,14 +157,6 @@ nav {
 
 .margin-item-right {
   margin-right: 160px;
-}
-
-.navigation-link {
-  color: #000000;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 26px;
 }
 
 .navigation-link:hover {
@@ -415,10 +412,36 @@ nav {
   margin: inherit;
   padding: 55px;
   background: #ffffff;
+  display: none;
+}
+
+.offer-form-popup-show {
+    display: block;
 }
 
 .offer-form-popup label {
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
   font-weight: bold;
+  line-height: 21px; 
+  font-weight: bold;
+}
+
+.form-date-input-top {
+    position: relative;
+    width: 322px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 24px;
+}
+
+.form-date-input-bottom {
+    position: relative;
+    width: 322px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 20px;
 }
 
 .form-movein input[type="text"],
@@ -437,22 +460,15 @@ nav {
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
-}
-
-.form-movein input[type="text"] {
-  margin-left: 16px;
-}
-
-.form-moveout input[type="text"] {
-  margin-left: 12px;
+  text-transform: uppercase;
 }
 
 .form-adult input[type="text"] {
-  margin-left: 40px;
+  margin-left: 39px;
 }
 
 .form-kids input[type="text"] {
-  margin-left: 25px;
+  margin-left: 22px;
 }
 
 .form-adult-kids input[type="text"] {
@@ -493,7 +509,7 @@ nav {
 .icon-calendar {
   position: absolute;
   top: 6px;
-  left: 418px;
+  left: 305px;
   outline: none;
   border: none;
   background: none;
@@ -554,6 +570,11 @@ nav {
 }
 
 .form-movein,
+.form-moveout {
+  font-size: 0;
+}
+
+.form-movein,
 .form-moveout,
 .form-adult-kids {
   position: relative;
@@ -573,7 +594,7 @@ nav {
 }
 
 .form-adult {
-  margin-right: 51px;
+  margin-right: 47px;
 }
 
 .offer-form-btn input[type="submit"] {
@@ -935,7 +956,7 @@ nav {
 
 .item-description {
   float: left;
-  width: 270px;
+  width: 760px;
 }
 
 .item-description h2 {
@@ -968,26 +989,21 @@ nav {
 }
 
 .item-btn {
-  font-size: 0;
+  font-size: 14px;
+  width: 760px;
 }
 
 .item-btn-blue {
-  display: inline-block;
-  width: 78px;
+  float: left;
   min-height: 15px;
   margin-right: 6px;
   padding: 3px 16px;
-  vertical-align: top;
-  font-size: 14px;
 }
 
 .item-btn-brown {
-  display: inline-block;
-  width: 110px;
+  float: left;
   min-height: 15px;
   padding: 3px 16px;
-  vertical-align: top;
-  font-size: 14px;
 }
 
 .item-rating {
@@ -1031,16 +1047,25 @@ nav {
 =            FOOTER            =
 ==============================*/
 .offer-map {
+  position: relative;
   width: 1200px;
-  min-height: 119px;
-  padding-top: 474px;
+  min-height: 594px;
   background: #94ba52 url(../img/offer_map.jpg) no-repeat;
 }
 
+.footer-hotels {
+    position: relative;
+    min-height: 123px;
+}
+
 .footer-container {
+  position: absolute;
+  width: 1200px;
+  bottom: 0;
   padding: 35px 0;
   background: #fefefe;
   opacity: 0.9;
+  z-index: 10;
 }
 
 .hashtag {
